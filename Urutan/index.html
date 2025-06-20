@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
+    <title>Urutan Ayam Bali - Frozen Food Enak</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Jual urutan ayam Bali dan bakso ayam frozen food enak. Pesan via WhatsApp, ready stock siap kirim.">
+    <meta name="keywords" content="jual urutan ayam bali, bakso ayam, frozen food, makanan beku, sosis ayam">
+    <meta name="author" content="Toko Urutan Ayam Bali">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Urutan Ayam Bali - Frozen Food Enak">
+    <meta property="og:description" content="Jual urutan ayam Bali dan bakso ayam frozen food enak dan praktis">
+    <meta property="og:type" content="website">
+    
+    <!-- Mobile Theme Color -->
+    <meta name="theme-color" content="#ff6b35">
+    <meta name="msapplication-navbutton-color" content="#ff6b35">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Enhanced Tailwind Config for Better Responsiveness -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ff6b35',
+                        secondary: '#f7931e',
+                        accent: '#ffcc02',
+                        whatsapp: '#25d366',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    screens: {
+                        'xs': '320px',
+                        'sm': '640px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1280px',
+                        '2xl': '1536px',
+                        // Custom breakpoints
+                        'mobile': '320px',
+                        'tablet': '768px',
+                        'laptop': '1024px',
+                        'desktop': '1280px',
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem',
+                        '128': '32rem',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                        'slide-down': 'slideDown 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'bounce-slow': 'bounce 3s infinite',
+                        'pulse-slow': 'pulse 3s infinite',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans overflow-x-hidden antialiased">
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black bg-opacity-60 z-40 hidden md:hidden backdrop-blur-sm">
+        <div class="fixed top-0 right-0 h-full w-full max-w-sm bg-white shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out" id="mobile-menu">
+            <div class="p-6 pt-8">
+                <div class="flex justify-between items-center mb-8">
+                    <span class="text-xl font-bold text-primary">🍗 Menu</span>
+                    <button id="close-mobile-menu" class="text-gray-600 hover:text-primary p-2 -m-2 rounded-full hover:bg-gray-100 transition-colors">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+                <nav class="space-y-2">
+                    <a href="#home" class="block text-lg font-medium text-gray-800 hover:text-primary transition-colors mobile-nav-link p-3 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-home mr-3 w-5"></i>Home
+                    </a>
+                    <a href="#products" class="block text-lg font-medium text-gray-800 hover:text-primary transition-colors mobile-nav-link p-3 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-shopping-basket mr-3 w-5"></i>Produk
+                    </a>
+                    <a href="#about" class="block text-lg font-medium text-gray-800 hover:text-primary transition-colors mobile-nav-link p-3 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-info-circle mr-3 w-5"></i>Tentang
+                    </a>
+                    <a href="#how-to-order" class="block text-lg font-medium text-gray-800 hover:text-primary transition-colors mobile-nav-link p-3 rounded-lg hover:bg-gray-50">
+                        <i class="fas fa-list-ol mr-3 w-5"></i>Cara Pesan
+                    </a>
+                    <a href="#contact" class="block text-lg font-medium text-white bg-whatsapp hover:bg-green-600 transition-colors mobile-nav-link p-3 rounded-lg mt-4">
+                        <i class="fab fa-whatsapp mr-3 w-5"></i>Kontak
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300 border-b border-gray-100" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14 sm:h-16 lg:h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <span class="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-primary truncate">
+                        🍗 Urutan Ayam Bali
+                    </span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-primary font-medium transition-colors nav-link text-sm lg:text-base">Home</a>
+                    <a href="#products" class="text-gray-800 hover:text-primary font-medium transition-colors nav-link text-sm lg:text-base">Produk</a>
+                    <a href="#about" class="text-gray-800 hover:text-primary font-medium transition-colors nav-link text-sm lg:text-base">Tentang</a>
+                    <a href="#how-to-order" class="text-gray-800 hover:text-primary font-medium transition-colors nav-link text-sm lg:text-base">Cara Pesan</a>
+                    <a href="#contact" class="bg-whatsapp text-white px-4 lg:px-6 py-2 rounded-full hover:bg-green-600 transition-colors font-medium text-sm lg:text-base">
+                        <i class="fab fa-whatsapp mr-2"></i>Kontak
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-800 hover:text-primary p-2 -m-2 rounded-full hover:bg-gray-100 transition-colors" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary via-secondary to-accent overflow-hidden" id="home">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0">
+            <div class="floating-element absolute top-16 sm:top-20 left-6 sm:left-10 text-2xl sm:text-3xl md:text-4xl animate-bounce-slow">🌟</div>
+            <div class="floating-element absolute top-40 sm:top-60 right-10 sm:right-20 text-2xl sm:text-3xl animate-float" style="animation-delay: 2s;">✨</div>
+            <div class="floating-element absolute bottom-32 sm:bottom-40 left-10 sm:left-20 text-3xl sm:text-4xl md:text-5xl animate-bounce-slow" style="animation-delay: 4s;">🍽️</div>
+        </div>
+        
+        <!-- Hero Content -->
+        <div class="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto pt-16 sm:pt-20">
+            <h1 class="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 animate-slide-down leading-tight">
+                <span class="block">Urutan Ayam Bali</span>
+                <span class="block text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-yellow-200 mt-2">Enak & Praktis</span>
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6 sm:mb-8 max-w-4xl mx-auto opacity-95 animate-fade-in leading-relaxed" style="animation-delay: 0.3s;">
+                Jual urutan ayam Bali dan bakso ayam frozen food yang enak dan praktis. Ready stock, siap kirim ke seluruh Indonesia!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-slide-up max-w-lg sm:max-w-none mx-auto" style="animation-delay: 0.6s;">
+                <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center bg-whatsapp text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl min-h-[48px]">
+                    <i class="fab fa-whatsapp mr-2 sm:mr-3 text-lg sm:text-xl"></i>
+                    Pesan Sekarang
+                </a>
+                <a href="#products" class="w-full sm:w-auto inline-flex items-center justify-center bg-white/20 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-white/30 transition-all duration-300 backdrop-blur-sm min-h-[48px]">
+                    <i class="fas fa-arrow-down mr-2 sm:mr-3"></i>
+                    Lihat Produk
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-xl sm:text-2xl opacity-70"></i>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-gray-50" id="products">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 fade-in-up">
+                    Produk yang Kami Jual
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto fade-in-up">
+                    Urutan ayam Bali dan bakso ayam frozen food siap saji
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
+                <!-- Urutan Ayam Bali -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 fade-in-up">
+                    <div class="h-48 sm:h-64 md:h-72 lg:h-80 bg-gradient-to-br from-primary to-secondary flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-drumstick-bite text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white opacity-90"></i>
+                        <div class="absolute top-3 sm:top-4 right-3 sm:right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 sm:px-4 py-1 sm:py-2">
+                            <span class="text-white font-semibold text-xs sm:text-sm">Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 lg:p-8">
+                        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Urutan Ayam Bali</h3>
+                        <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg leading-relaxed">
+                            Sosis ayam khas Bali dengan rasa yang gurih dan enak. Cocok untuk digoreng atau dipanggang sebagai lauk praktis.
+                        </p>
+                        <ul class="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Rasa Gurih dan Enak</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Praktis dan Tahan Lama</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Ready Stock</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Siap Goreng/Panggang</span>
+                            </li>
+                        </ul>
+                        <a href="#how-to-order" class="w-full bg-primary text-white py-3 sm:py-4 rounded-xl font-semibold hover:bg-orange-600 transition-colors text-center block text-sm sm:text-base min-h-[48px] flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bakso Ayam -->
+                <div class="bg-white rounded-2xl sm:rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 transition-all duration-300 fade-in-up">
+                    <div class="h-48 sm:h-64 md:h-72 lg:h-80 bg-gradient-to-br from-secondary to-accent flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-circle text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-white opacity-90"></i>
+                        <div class="absolute top-3 sm:top-4 right-3 sm:right-4 bg-white/20 backdrop-blur-sm rounded-full px-3 sm:px-4 py-1 sm:py-2">
+                            <span class="text-white font-semibold text-xs sm:text-sm">Ready Stock</span>
+                        </div>
+                    </div>
+                    <div class="p-4 sm:p-6 lg:p-8">
+                        <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Bakso Ayam</h3>
+                        <p class="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base lg:text-lg leading-relaxed">
+                            Bakso ayam frozen yang lembut dan kenyal. Cocok untuk sup, mie ayam, atau dimakan langsung dengan saus.
+                        </p>
+                        <ul class="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Tekstur Lembut & Kenyal</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Frozen Food Berkualitas</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Ready Stock</span>
+                            </li>
+                            <li class="flex items-center text-gray-700 text-sm sm:text-base">
+                                <i class="fas fa-check-circle text-whatsapp mr-2 sm:mr-3 flex-shrink-0"></i>
+                                <span>Praktis & Bergizi</span>
+                            </li>
+                        </ul>
+                        <a href="#how-to-order" class="w-full bg-secondary text-white py-3 sm:py-4 rounded-xl font-semibold hover:bg-orange-500 transition-colors text-center block text-sm sm:text-base min-h-[48px] flex items-center justify-center">
+                            <i class="fas fa-shopping-cart mr-2"></i>
+                            Pesan Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-white" id="about">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+                <div class="fade-in-up order-2 lg:order-1">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
+                        Kenapa Pilih Kami?
+                    </h2>
+                    <div class="space-y-4 sm:space-y-6 text-gray-600 text-sm sm:text-base lg:text-lg">
+                        <p class="leading-relaxed">
+                            Kami adalah toko terpercaya yang menjual urutan ayam Bali dan bakso ayam frozen food berkualitas. Kami selalu pastikan produk yang kami jual fresh dan enak.
+                        </p>
+                        <p class="leading-relaxed">
+                            Pemesanan mudah via WhatsApp, respon cepat, dan pengiriman terpercaya. Tersedia COD (bayar ditempat), kirim via ojol untuk area dekat.
+                        </p>
+                        <p class="leading-relaxed">
+                            Harga bersaing, kualitas terjaga, dan ready stock untuk kebutuhan keluarga Anda. Pesan sekarang juga!
+                        </p>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
+                        <div class="text-center p-3 sm:p-4 bg-gray-50 rounded-xl">
+                            <div class="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">Ready</div>
+                            <div class="text-gray-600 text-sm sm:text-base">Stock</div>
+                        </div>
+                        <div class="text-center p-3 sm:p-4 bg-gray-50 rounded-xl">
+                            <div class="text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">Fast</div>
+                            <div class="text-gray-600 text-sm sm:text-base">Respon</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-up order-1 lg:order-2">
+                    <div class="relative">
+                        <div class="h-64 sm:h-80 md:h-96 lg:h-[500px] bg-gradient-to-br from-primary to-secondary rounded-2xl sm:rounded-3xl flex items-center justify-center shadow-2xl">
+                            <i class="fas fa-award text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white opacity-90"></i>
+                        </div>
+                        <div class="absolute -bottom-4 sm:-bottom-6 -right-4 sm:-right-6 w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 bg-whatsapp rounded-full flex items-center justify-center shadow-xl">
+                            <i class="fas fa-star text-white text-lg sm:text-xl md:text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Order Section -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-gradient-to-br from-purple-600 via-blue-600 to-indigo-700 text-white" id="how-to-order">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 fade-in-up">
+                    Cara Pemesanan
+                </h2>
+                <p class="text-base sm:text-lg md:text-xl opacity-90 max-w-3xl mx-auto fade-in-up">
+                    Mudah dan cepat, cukup 3 langkah untuk dapat produk yang enak!
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="text-center fade-in-up">
+                    <div class="relative mb-4 sm:mb-6">
+                        <div class="w-16 sm:w-20 h-16 sm:h-20 bg-whatsapp rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto shadow-lg">
+                            1
+                        </div>
+                        <div class="hidden md:block absolute top-8 sm:top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Chat WhatsApp</h3>
+                        <p class="opacity-90 text-sm sm:text-base leading-relaxed">
+                            Klik tombol WhatsApp dan chat langsung untuk tanya harga dan ketersediaan stock.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center fade-in-up">
+                    <div class="relative mb-4 sm:mb-6">
+                        <div class="w-16 sm:w-20 h-16 sm:h-20 bg-whatsapp rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto shadow-lg">
+                            2
+                        </div>
+                        <div class="hidden md:block absolute top-8 sm:top-10 left-full w-full h-0.5 bg-white/30"></div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Pilih & Pesan</h3>
+                        <p class="opacity-90 text-sm sm:text-base leading-relaxed">
+                            Tentukan produk dan jumlah yang mau dibeli, lalu konfirmasi pesanan.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="text-center fade-in-up">
+                    <div class="mb-4 sm:mb-6">
+                        <div class="w-16 sm:w-20 h-16 sm:h-20 bg-whatsapp rounded-full flex items-center justify-center text-xl sm:text-2xl font-bold mx-auto shadow-lg">
+                            3
+                        </div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 sm:p-6">
+                        <h3 class="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Bayar & Terima</h3>
+                        <p class="opacity-90 text-sm sm:text-base leading-relaxed">
+                            Pilih pembayaran COD (bayar ditempat) atau transfer, bisa kirim via ojol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-12 sm:py-16 lg:py-24 bg-gray-50" id="contact">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 fade-in-up">
+                Pesan Sekarang
+            </h2>
+            <p class="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-12 max-w-3xl mx-auto fade-in-up leading-relaxed">
+                Mau pesan urutan ayam Bali atau bakso ayam? Chat aja via WhatsApp, ready stock siap kirim! Bisa COD atau transfer, kirim via ojol.
+            </p>
+            
+            <div class="mb-8 sm:mb-12 fade-in-up">
+                <a href="https://wa.me/6285739026117?text=Halo,%20mau%20tanya%20harga%20urutan%20ayam%20bali%20dan%20bakso%20ayam%20dong.%20Ready%20stock%20nggak?%20Bisa%20COD%20atau%20ojol?" 
+                   class="inline-flex items-center bg-whatsapp text-white px-6 sm:px-8 md:px-12 py-4 sm:py-5 rounded-full text-base sm:text-lg md:text-xl font-bold hover:bg-green-600 transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl min-h-[56px]" 
+                   target="_blank">
+                    <i class="fab fa-whatsapp mr-3 sm:mr-4 text-xl sm:text-2xl"></i>
+                    Chat WhatsApp
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 md:gap-8 fade-in-up">
+                <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                    <i class="fas fa-phone text-2xl sm:text-3xl text-primary mb-3 sm:mb-4"></i>
+                    <h3 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">WhatsApp</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm">+62 857-3902-6117</p>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                    <i class="fas fa-clock text-2xl sm:text-3xl text-primary mb-3 sm:mb-4"></i>
+                    <h3 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Chat Kami</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm">09:00 - 21:00 WIB</p>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-2xl shadow-lg">
+                    <i class="fas fa-shipping-fast text-2xl sm:text-3xl text-primary mb-3 sm:mb-4"></i>
+                    <h3 class="font-bold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Pengiriman</h3>
+                    <p class="text-gray-600 text-xs sm:text-sm">COD / Ojol / Kirim</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 sm:py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                <div>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-bold text-primary mb-3 sm:mb-4">🍗 Urutan Ayam Bali</h3>
+                    <p class="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
+                        Toko terpercaya urutan ayam Bali dan bakso ayam frozen food untuk keluarga Indonesia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-whatsapp transition-colors p-2 rounded-full hover:bg-gray-800">
+                            <i class="fab fa-whatsapp text-xl sm:text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-400 transition-colors p-2 rounded-full hover:bg-gray-800">
+                            <i class="fab fa-instagram text-xl sm:text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-blue-600 transition-colors p-2 rounded-full hover:bg-gray-800">
+                            <i class="fab fa-facebook text-xl sm:text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Produk Kami</h4>
+                    <ul class="space-y-2 text-gray-300 text-sm sm:text-base">
+                        <li><a href="#products" class="hover:text-white transition-colors">Urutan Ayam Bali</a></li>
+                        <li><a href="#products" class="hover:text-white transition-colors">Bakso Ayam</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors">Tanya Harga</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Kontak</h4>
+                    <ul class="space-y-2 text-gray-300 text-sm sm:text-base">
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-2 w-4"></i>
+                            <span>+62 857-3902-6117</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 w-4"></i>
+                            <span class="break-all">urutanayambali@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 w-4"></i>
+                            <span>COD & Ojol Available</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-6 sm:mt-8 pt-6 sm:pt-8 text-center">
+                <p class="text-gray-300 text-sm sm:text-base">
+                    &copy; 2025 Toko Urutan Ayam Bali. Semua Hak Dilindungi.
+                </p>
+                <p class="text-gray-400 text-xs sm:text-sm mt-2">
+                    Frozen Food Enak dan Praktis
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
